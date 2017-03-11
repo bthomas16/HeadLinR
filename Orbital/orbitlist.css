@@ -1,0 +1,18 @@
+/* Orbitlist core */
+ul.orbit.orbitlistJS {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    position: relative;
+}
+
+/* Orbitlist satellites */
+ul.orbit.orbitlistJS li {
+    position: absolute;
+    cursor: pointer;
+    opacity:1;
+}
+
+ul.orbit.orbitlistJS.subMenu {
+  margin:vw;
+}
