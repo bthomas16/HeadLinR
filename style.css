@@ -1,13 +1,12 @@
-70256
-
-;0 :nigram
-center;xetwr
-hidden;revo
-;1z
 select {
   font-size: 2em;
   text-align: center;
   font-family: Days One;
+}
+
+.hidden {
+  visibility: hidden;
+  display: none;
 }
 
 /* Website-Container */
@@ -19,8 +18,73 @@ body {
   align-items: flex-start;
   width: 100vw;
   height: 100vh;
+  background-color: #142f43;
   /*background-image: url("http://www.temporarytattoos4u.co.uk/ekmps/shops/12march2004/images/holographic-black-glitter-2763-p.jpg");*/
   background-image: url('images/flag.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mexico {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100vw;
+  height: 100vh;
+  background-color: #142f43;
+  /*background-image: url("http://www.temporarytattoos4u.co.uk/ekmps/shops/12march2004/images/holographic-black-glitter-2763-p.jpg");*/
+  background-image: url('images/mexicoflag1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.eu {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100vw;
+  height: 100vh;
+  background-color: #142f43;
+  /*background-image: url("http://www.temporarytattoos4u.co.uk/ekmps/shops/12march2004/images/holographic-black-glitter-2763-p.jpg");*/
+  background-image: url('images/euflag.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.canada {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100vw;
+  height: 100vh;
+  background-color: #142f43;
+  /*background-image: url("http://www.temporarytattoos4u.co.uk/ekmps/shops/12march2004/images/holographic-black-glitter-2763-p.jpg");*/
+  background-image: url('images/canadaflag.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.china {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100vw;
+  height: 100vh;
+  background-color: #142f43;
+  /*background-image: url("http://www.temporarytattoos4u.co.uk/ekmps/shops/12march2004/images/holographic-black-glitter-2763-p.jpg");*/
+  background-image: url('images/chinaflag.jpg');
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -36,15 +100,29 @@ nav {
 
 .nav-wrapper{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width:100vw;
   margin:auto;
 }
 
+.right {
+  background-color: lightgrey ;
+  background-image: url("images/logo.png");
+  background-size:contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  box-shadow: grey 0 5px 5px 0;
+}
+
 .logo {
   width:10em;
-  margin-top: 10%;
+  margin-top:10%;
+}
+
+.back {
+  width: 15%;
+  margin:auto;
 }
 
 .spinner {
@@ -53,7 +131,7 @@ nav {
   background-image: url('images/logo.png');
   background-size: contain;
   margin: 100px auto;
-  margin-top:52vh;
+  margin-top:60vh;
   border:1px solid white;
   border-radius: 50%;
   -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
@@ -91,25 +169,78 @@ nav {
   z-index: 999999;
 }
 
+.spinner-wrapper-mexico {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('images/mexicoflag1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999999;
+}
+
+.spinner-wrapper-eu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('images/euflag.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999999;
+}
+
+.spinner-wrapper-canada {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('images/canadaflag.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999999;
+}
+
+.spinner-wrapper-china {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('images/chinaflag.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999999;
+}
+
 .newsTitle {
   display: flex;
   justify-content: center;
+  flex-wrap: nowrap;
   width:100%;
   text-align: center;
   font-family: Days One;
   background-color:rgba(0, 0, 0, 0.5);
   /*padding:1%;*/
   color: white;
-  margin:auto;
 }
 
 header .newsTitle {
+  font-size:1em;
   margin: auto;
   /*background: white;*/
   width: 100%;
 }
 
-.ish {
+.text {
   width:100%;
   background-color: darkgrey;
   margin:1%;
@@ -124,18 +255,6 @@ header .newsTitle {
   text-align: center;
   opacity:1;
 }
-/*.card {
-  font-size: 1.2em;
-  display: flex;
-  justify-content: center;
-  height:auto;
-  text-align: center;
-  margin:auto;
-}
-
-.card-content p{
-  margin:100px;
-}*/
 
 .container {
   display: flex;
@@ -143,7 +262,7 @@ header .newsTitle {
   align-items: flex-start;
   flex-wrap: wrap;
     width:100vw;
-    height: 75vh;
+    height: 55vh;
     overflow: hidden;
     margin:auto;
     /*margin-top: -20%;*/
@@ -154,7 +273,7 @@ header .newsTitle {
   justify-content: center;
   align-items: baseline;
   flex-wrap: nowrap;
-  margin:0;
+  margin:auto;
   overflow: hidden;
   margin:1%;
 }
@@ -194,6 +313,8 @@ select {
   text-align: center;
   font-family: Days One;
 }
+
+
 
 .orbit li {
     width: 120px;
@@ -248,14 +369,14 @@ select {
   background-size: contain;
 }
 
-.subMenu{
+.subMenu {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1em;
-  color: blue;
   font-family: Days One;
   z-index: 1;
+  border: 2px solid #0d005d;
 }
 
 ul.orbit.orbitlistJS li {
@@ -275,8 +396,17 @@ opacity:0.2;
 }
 
 .orbit li.orbitlistJS-active {
-    background: white;
-    opacity:.2
+    background-image:url('images/logo.png');
+    opacity:.2;
+    z-index: 1 !important;
+}
+
+ul.submenu li {
+  opacity:.2;
+}
+
+ .subMenu .a {
+  font-size:78%;
 }
 
 .footer-container {
@@ -328,15 +458,137 @@ ul.menu {
     background-color: grey;
 }
 
+/*MEDIA QUERIES*/
 
+@media (max-width: 768px) {
 
-/*.menu {
-  margin:5%;
-}*/
+  .mexico {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    height: 100vh;
+    background-color: #142f43;
+    /*background-image: url("http://www.temporarytattoos4u.co.uk/ekmps/shops/12march2004/images/holographic-black-glitter-2763-p.jpg");*/
+    background-image: url('images/mexicoflag1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
-@media (min-width: 520px) {
+  .eu {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    height: 100vh;
+    background-color: #142f43;
+    /*background-image: url("http://www.temporarytattoos4u.co.uk/ekmps/shops/12march2004/images/holographic-black-glitter-2763-p.jpg");*/
+    background-image: url('images/euflag1.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .canada {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    height: 100vh;
+    background-color: #142f43;
+    /*background-image: url("http://www.temporarytattoos4u.co.uk/ekmps/shops/12march2004/images/holographic-black-glitter-2763-p.jpg");*/
+    background-image: url('images/canadaflag1.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .china {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    height: 100vh;
+    background-color: #142f43;
+    /*background-image: url("http://www.temporarytattoos4u.co.uk/ekmps/shops/12march2004/images/holographic-black-glitter-2763-p.jpg");*/
+    background-image: url('images/chinaflag1.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .spinner-wrapper-eu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/euflag1.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 999999;
+  }
+
+  .spinner-wrapper-canada {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/canadaflag1.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 999999;
+  }
+
+  .spinner-wrapper-china {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/chinaflag1.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 999999;
+  }
+
+  .news{
+    font-size:1.2em;
+  }
+
+  .orbit li {
+    margin:auto;
+      width: 90px;
+      height: 90px;
+      border-radius: 90px;
+      border: 3% solid #000;
+  	  background: #fff;
+      text-align: center;
+      /*margin: auto;*/
+      border: 2px solid white;
+      /*line-height: 80px;*/
+  }
   .container {
-    height:85vh;
+    .height: 45vh;
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    height:55vh;
   }
   select {
     font-size: 2em;
@@ -351,13 +603,54 @@ ul.menu {
       margin: 1%;
   }
 
-.ish {
-  width:50vw;
+.text {
+  width:40vw;
   margin:1%;
   margin-bottom:auto;
 }
 
+.spinner {
+  width: 100px;
+  height: 100px;
+  background-image: url('images/logo.png');
+  background-size: contain;
+  margin: 100px auto;
+  margin-top:60vh;
+  border:1px solid white;
+  border-radius: 50%;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
 }
+
+}
+
+
+/*
+//ipad pro media query
+
+@media (min-width: 1024px), (min height) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+      width:100vw;
+      height: 65vh;
+      overflow: hidden;
+      margin:auto;
+  }
+
+  .orbit li {
+      width: 220px;
+      height: 220px;
+      border-radius: 220px;
+      border: 3% solid #000;
+  	  background: #fff;
+      text-align: center;
+      border: 2px solid white;
+  }
+
+}*/
 
 /*@media (min-width: 600px) {
   body {

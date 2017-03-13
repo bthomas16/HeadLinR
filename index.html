@@ -15,23 +15,6 @@
         <script type="text/javascript" src="jQuery.js"></script>
     </head>
     <body>
-    <!-- <div id="jquery-script-menu">
-<div class="jquery-script-center">
-
-<div class="jquery-script-ads"><script type="text/javascript"><!--
-google_ad_client = "ca-pub-2783044520727903";
-
-google_ad_slot = "2780937993";
-google_ad_width = 728;
-google_ad_height = 90;
-
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script></div>
-<div class="jquery-script-clear"></div>
-</div>
-</div> -->
 
 <!-- Page pre loader -->
 
@@ -45,7 +28,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <!-- Logo & nav wrapper -->
     <nav>
        <div class="nav-wrapper">
-         <a href="#" class="brand-logo center"><img class="responsive-img logo" src="images/hlLogo.png"></a>
+         <a href="index.html" class="brand-logo center"><img class="responsive-img logo" src="images/hlLogo.png"></a>
          <ul id="nav-mobile" class="left hide-on-med-and-down">
          </ul>
        </div>
@@ -53,68 +36,85 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
  <!-- header title -->
 
-     <header class="newsTitle">
+     <header class="newsTitle l12">
        <h3 class="news">News, Curated</h3>
      </header>
 
+ <!-- Description Card -->
+<div class="text">
+   <h6 class="p">Begin curating your news on <em>HeadLinR</em>.
+   <h6 class="p">Browse top stories &amp; sources by country.</h6>
+</div>
 
- <!-- <div class="row">
-       <div class="col s12 m12 l12">
-         <div class="card blue-grey">
-           <div class="card-content white-text">
+<!-- Country changer and button -->
 
-           </div>
-       </div>
+     <!-- <div class="country-container">
+       <select class="browser-default s8 m8 l8">
+           <option value="1"selected><p>United States</p></option>
+           <option value="2">European Union</option>
+           <option value="3">Canada</option>
+           <option value="4">Mexico</option>
+           <option value="5">China</option>
+       </select>
+       <button  class="btn waves-effect waves-light s4 m4 l4" type="submit" name="action">Curate
+           <i class="material-icons right">send</i>
+       </button>
      </div> -->
 
+<div class="country-container">
+     <select class="browser-default s12 m12 l12" onchange="location = this.options[this.selectedIndex].value;">
+      <option selected value="index.html">United States</option>
+      <option value="Pages/EU-Pages/eu.html">European Union</option>
+      <option value="Pages/Canada-Pages/canada.html">Canada</option>
+      <option value="Pages/Mexico-Pages/mexico.html">Mexico</option>
+      <option value="Pages/China-Pages/china.html">China</option>
+    </select>​
+</div>
 <!-- Orbit / radial menu -->
         <div class="container">
-          <div class="country-container">
-            <select class="browser-default s8">
-                <option value="1"selected><p>United States</p></option>
-                <option value="2">European Union</option>
-                <option value="3">Canada</option>
-                <option value="4">Mexico</option>
-                <option value="5">China</option>
-            </select>
-            <button  class="btn waves-effect waves-light s4" type="submit" name="action">Curate
-                <i class="material-icons right">send</i>
-            </button>
-          </div>
+
             <ul class="orbit">
                 <li class="cnn">
                     <ul class="subMenu">
-                      <li class="subMenu">Politics</li>
-                      <li class="subMenu">Headlines</li>
-                      <li class="subMenu">Opinion Pieces</li>
+                    <a href="../index.html">
+                      <li class="subMenu"><a href="USA-Pages/CNN/topStories.html">Top Stories</a></li></a>
+                      <li class="subMenu"><a href="Pages/USA-Pages/CNN/politics.html">Politics</a></li>
+                      <li class="subMenu"><a href="Pages/USA-Pages/CNN/world.html"><span>World</span></a></li>
+                      <li class="subMenu"><a href="Pages/USA-Pages/CNN/business.html">Business</a></li>
+                      <li class="subMenu"><a href="Pages/USA-Pages/CNN/technology.html">Technology</a></li>
                   </ul>
                 </li>
                 <li class="fox">
                   <ul class="subMenu">
-                    <li class="subMenu">Politics</li>
-                    <li class="subMenu">Headlines</li>
-                    <li class="subMenu">Opinion Pieces</li>
+                    <li class="subMenu"><a href="Pages/USA-Pages/Fox/fox-mostPopular.html">Most Popular</a></li>
+                    <li class="subMenu"><a href="Pages/USA-Pages/Fox/fox-politics.html">Politics</a></li>
+                    <li class="subMenu"><a href="Pages/USA-Pages/Fox/fox-science.html">Science</a></li>
+                    <li class="subMenu"><a href="Pages/USA-Pages/Fox/fox-sports.html">Sports</a></li>
                 </ul>
                 </li>
                 <li class="reuters">
                   <ul class="subMenu">
-                    <li class="subMenu">Politics</li>
-                    <li class="subMenu">Headlines</li>
-                    <li class="subMenu">Opinion Pieces</li>
+                    <li class="subMenu"><a href="Pages/USA-Pages/Reuters/reuters-money.html">Money</a></li>
+                    <li class="subMenu"><a href="Pages/USA-Pages/Reuters/reuters-mostRead.html">Most Read</a></li>
+                    <li class="subMenu"><a href="Pages/USA-Pages/Reuters/reuters-politics.html">Politics</a></li>
+                    <li class="subMenu"><a href="Pages/USA-Pages/Reuters/reuters-usNews.html">Us News</a></li>
+                    <li class="subMenu"><a href="Pages/USA-Pages/Reuters/reuters-world.html">World</a></li>
                 </ul>
                 </li>
-                <li class="thehill">
+                <li class="thehill m">
                   <ul class="subMenu">
-                    <li class="subMenu">Politics</li>
-                    <li class="subMenu">Headlines</li>
-                    <li class="subMenu">Opinion Pieces</li>
+                    <li class="subMenu a"><a href="Pages/USA-Pages/Hill/administration.html">Administration</a></li>
+                    <li class="subMenu a"><a href="Pages/USA-Pages/Hill/energy-environment.html">Environment</a></li>
+                    <li class="subMenu a"><a href="Pages/USA-Pages/Hill/hill-politics.html">Politics</a></li>
+                    <li class="subMenu a"><a href="Pages/USA-Pages/Hill/healthcare.html">Healthcare</a></li>
+                    <!-- <li class="subMenu a"><a href="USA-Pages/Hill/Senate.html">Senate</a></li> -->
                 </ul>
                 </li>
                 <li class="nytimes">
                   <ul class="subMenu">
-                    <li class="subMenu">Politics</li>
-                    <li class="subMenu">Headlines</li>
-                    <li class="subMenu">Opinion Pieces</li>
+                    <li class="subMenu a"><a href="USA-Pages/Hill/energy-environment.html">Environment</a></li>
+                    <li class="subMenu a"><a href="USA-Pages/Hill/hill-politics.html">Politics</a></li>
+                    <li class="subMenu a"><a href="USA-Pages/Hill/healthcare.html">Healthcare</a></li>
                 </ul>
                 </li>
                 <li class="ap">
@@ -126,9 +126,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
                 </li>
                 <li class="wh">
                     <ul class="subMenu">
-                      <li value="ish" class="subMenu">Politics</li>
-                      <li value="ish" class="subMenu">Headlines</li>
-                      <li value="ish" class="subMenu">Opinion Pieces</li>
+                          <li class="subMenu"><a href="USA-Pages/Fox/defense.html">Defense</a></li>
                     </ul>
                 </li>
               </ul>
@@ -138,9 +136,9 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
       <!-- <div class="footer-container"> -->
         <ul class="menu">
-            <li><a class="active" href="#facts">Facts</a></li>
-            <li><a href="#progressive">Progessive</a></li>
-            <li><a href="#conservative">Conservative</a></li>
+            <li><a class="facts active" href="#facts">Facts</a></li>
+            <li><a class="progressive" href="#progressive">Progessive</a></li>
+            <li><a class="conservative" href="#conservative">Conservative</a></li>
         </ul>
       <!-- </div> -->
 

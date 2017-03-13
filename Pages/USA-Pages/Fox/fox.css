@@ -1,0 +1,438 @@
+
+
+select {
+  font-size: 2em;
+  text-align: center;
+  font-family: Days One;
+}
+
+/* Website-Container */
+body {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100vw;
+  height: 100vh;
+  background-color: #142f43;
+  /*background-image: url("http://www.temporarytattoos4u.co.uk/ekmps/shops/12march2004/images/holographic-black-glitter-2763-p.jpg");*/
+  background-image: url('images/flag.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  background-color: lightgrey;
+  background-image: url("images/logo.png");
+  background-size:contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  box-shadow: grey 0 5px 5px 0;
+}
+
+.nav-wrapper{
+  /*display: flex;*/
+  /*justify-content: center;*/
+  align-items: flex-start;;
+  width:100vw;
+  margin:auto;
+}
+
+.logo {
+  width:10em;
+  margin-top:auto;
+}
+
+.back {
+  width: 15%;
+  margin:-1%;
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  background-image: url('images/logo.png');
+  background-size: contain;
+  margin: 100px auto;
+  margin-top:62vh;
+  border:1px solid white;
+  border-radius: 50%;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  } 50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+  } 100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+.spinner-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('images/flag.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999999;
+}
+
+.newsTitle {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width:100%;
+  text-align: center;
+  font-family: Days One;
+  background-color:rgba(0, 0, 0, 0.5);
+  /*padding:1%;*/
+  color: white;
+}
+
+header .newsTitle {
+  font-size:1em;
+  margin: auto;
+  /*background: white;*/
+  width: 100%;
+}
+
+.text {
+  width:100%;
+  background-color: darkgrey;
+  margin:1%;
+  border:1px solid white;
+  border-radius:5px;
+  opacity:.8;
+}
+
+.p {
+  color:black;
+  font-family: Days One;
+  text-align: center;
+  opacity:1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+    width:100vw;
+    height: 55vh;
+    overflow: hidden;
+    margin:auto;
+    /*margin-top: -20%;*/
+}
+
+.country-container {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  margin:auto;
+  overflow: hidden;
+  margin:1%;
+}
+
+.btn {
+  background-color:#0d005d;
+  border:1px solid white;
+  border-radius: 5px;
+}
+
+.browser-default {
+    overflow: hidden;
+    width:100vw;
+    border: 2px solid black;
+    margin: 1%;
+    border-radius:5px;
+}
+
+.header {
+  width:100vw;
+  text-align: center;
+  font-size: 3em;
+  /*margin: auto;*/
+}
+
+.orbit {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100vw;
+  height:justify;
+  margin: auto;
+}
+
+select {
+  font-size: 1em;
+  text-align: center;
+  font-family: Days One;
+}
+
+
+
+.orbit li {
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    border: 3% solid #000;
+	  background: #fff;
+    text-align: center;
+    /*margin: auto;*/
+    border: 2px solid white;
+    /*line-height: 80px;*/
+}
+
+.orbit li.cnn{
+  background-image: url("images/cnnlogo.png");
+  background-size: contain;
+  z-index: 1;
+}
+.orbit li.fox{
+  background-image: url("images/foxlogo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.orbit li.reuters{
+  background-color: black;
+  background-image: url("images/reuterslogo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.orbit li.thehill{
+  background-image: url("images/thehilllogo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.orbit li.nytimes{
+  background-image: url("images/nytlogo.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.orbit li.ap{
+  background-image: url("images/aplogo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.orbit li.wh{
+  background-image: url("images/potuslogo.jpeg");
+  background-size: contain;
+}
+
+.subMenu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  color: blue;
+  font-family: Days One;
+  z-index: 1;
+}
+
+ul.orbit.orbitlistJS li {
+    transition: all .2s ease;
+}
+
+ul.orbit.orbitlistJS li:hover {
+    background-image: url('images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity:0.6;
+}
+
+.orbit li.orbitlistJS-trace {
+background-color:rgba(0, 0, 0, 0.5);
+opacity:0.2;
+}
+
+.orbit li.orbitlistJS-active {
+    background: white;
+    opacity:.2;
+    z-index: 1 !important;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width:100vw;
+  background-color:rgba(0, 0, 0, 0.5);
+  margin:auto;
+}
+
+.footer {
+  font-size: 1.2em;
+}
+
+.footer span {
+  color: white;
+  border:2px solid white;
+  /*padding:6px;*/
+}
+
+ul.menu {
+  display: flex;
+  justify-content: space-around;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+    opacity:0.5;
+    margin: auto;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    margin-top: auto;
+    opacity: 1;
+}
+
+.menu li a:hover:not(.active) {
+    background-color: grey;
+}
+
+.active {
+    background-color: grey;
+}
+
+/*iphone 5 media query won't work*/
+
+/*@media (max-width: 499px:) {
+
+  .text {
+    color: white;
+  }
+
+  .newsTitle {
+    display: flex;
+    justify-content: center;
+    width:100%;
+    text-align: center;
+    font-family: Days One;
+    background-color:rgba(0, 0, 0, 0.5);
+    margin:auto;
+    color: green;
+  }
+
+  .news {
+    font-size:1px;
+    color: green;
+  }
+
+  header .newsTitle {
+    margin: auto;
+    color: red;
+    width: 100%;
+  }
+
+  .country-container {
+    visibility: hidden;
+  }
+  .browser-default {
+    visibility: hidden;
+  }
+}*/
+
+
+
+@media (min-width: 520px) {
+  .container {
+    height:52vh;
+  }
+  select {
+    font-size: 2em;
+    text-align: center;
+    font-family: Days One;
+  }
+
+  .browser-default {
+      overflow: hidden;
+      width:50vw;
+      border: 2px solid black;
+      margin: 1%;
+  }
+
+.text {
+  width:60vw;
+  margin:1%;
+  margin-bottom:auto;
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  background-image: url('images/logo.png');
+  background-size: contain;
+  margin: 100px auto;
+  margin-top:67vh;
+  border:1px solid white;
+  border-radius: 50%;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+}
+
+
+/*
+//ipad pro media query
+
+@media (min-width: 1024px), (min height) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+      width:100vw;
+      height: 65vh;
+      overflow: hidden;
+      margin:auto;
+  }
+
+  .orbit li {
+      width: 220px;
+      height: 220px;
+      border-radius: 220px;
+      border: 3% solid #000;
+  	  background: #fff;
+      text-align: center;
+      border: 2px solid white;
+  }
+
+}*/
+
+/*@media (min-width: 600px) {
+  body {
+    background-image: url('images/flag.jpg');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}*/

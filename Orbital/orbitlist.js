@@ -117,7 +117,7 @@
 
                 // Calculate distance from core (between 0 and 1)
                 var distance = (visibleHeight === 1 ? 0.5 : (borders + orbitHeight - 1) / (2 * borders + visibleHeight - 1));
-                distance = inner + distance * (outer - inner) + .1;
+                distance = inner + distance * (outer - inner) + .2;
 
                 // Calculate satellite position
                 var radiant = (index / density + angle + arcBegin) * arcLen * Math.PI * 2;
@@ -247,7 +247,9 @@
 
         });
     };
-})(jQuery);
+})
+
+(jQuery);
 
 // Document ready setup
 jQuery(function() {
