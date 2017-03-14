@@ -10,9 +10,6 @@
         <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="orbital/orbitlist.css" media='all' type="text/css" />
         <link rel="stylesheet" href="style.css" media='all' type="text/css" />
-        <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
-        <script src="orbital/orbitlist.js"></script>
-        <script type="text/javascript" src="jQuery.js"></script>
     </head>
     <body>
 
@@ -64,7 +61,7 @@
 <div class="country-container">
      <select class="browser-default s12 m12 l12" onchange="location = this.options[this.selectedIndex].value;">
       <option selected value="index.html">United States</option>
-      <option value="Pages/EU-Pages/eu.html">European Union</option>
+      <option value="Pages/UK-Pages/uk.html">UK &amp; AU</option>
       <option value="Pages/Canada-Pages/canada.html">Canada</option>
       <option value="Pages/Mexico-Pages/mexico.html">Mexico</option>
       <option value="Pages/China-Pages/china.html">China</option>
@@ -72,12 +69,11 @@
 </div>
 <!-- Orbit / radial menu -->
         <div class="container">
-
             <ul class="orbit">
                 <li class="cnn">
                     <ul class="subMenu">
                     <a href="../index.html">
-                      <li class="subMenu"><a href="USA-Pages/CNN/topStories.html">Top Stories</a></li></a>
+                      <li class="subMenu"><a href="Pages/USA-Pages/CNN/topStories.html">Top Stories</a></li></a>
                       <li class="subMenu"><a href="Pages/USA-Pages/CNN/politics.html">Politics</a></li>
                       <li class="subMenu"><a href="Pages/USA-Pages/CNN/world.html"><span>World</span></a></li>
                       <li class="subMenu"><a href="Pages/USA-Pages/CNN/business.html">Business</a></li>
@@ -112,21 +108,27 @@
                 </li>
                 <li class="nytimes">
                   <ul class="subMenu">
-                    <li class="subMenu a"><a href="USA-Pages/Hill/energy-environment.html">Environment</a></li>
-                    <li class="subMenu a"><a href="USA-Pages/Hill/hill-politics.html">Politics</a></li>
-                    <li class="subMenu a"><a href="USA-Pages/Hill/healthcare.html">Healthcare</a></li>
+                    <li class="subMenu"><a href="Pages/USA-Pages/NYT/nyt-politics.html">Environment</a></li>
+                    <li class="subMenu"><a href="Pages/USA-Pages/NYT/nyt-politics.html">Politics</a></li>
+                    <li class="subMenu"><a href="Pages/USA-Pages/NYT/healthcare.html">Healthcare</a></li>
                 </ul>
                 </li>
                 <li class="ap">
                   <ul class="subMenu">
-                    <li class="subMenu">Politics</li>
-                    <li class="subMenu">Headlines</li>
-                    <li class="subMenu">Opinion Pieces</li>
+                    <li class="subMenu"><a href="Pages/USA-Pages/AP/business.html">Business</a></li>
+                    <li class="subMenu"><a href="Pages/USA-Pages/AP/health.html">Healthcare</a></li>
+                    <li class="subMenu"><a href="Pages/USA-Pages/AP/science.html">Science</a></li>
+                    <li class="subMenu"><a href="Pages/USA-Pages/AP/topHeadlines.html">Top Headlines</a></li>
+                    <li class="subMenu"><a href="Pages/Pages/USA-Pages/AP/ap-politics.html">Politics</a></li>
                 </ul>
                 </li>
                 <li class="wh">
                     <ul class="subMenu">
-                          <li class="subMenu"><a href="USA-Pages/Fox/defense.html">Defense</a></li>
+                          <li class="subMenu"><a href="Pages/USA-Pages/Fox/defense.html">Defense</a></li>
+                          <li class="subMenu"><a href="Pages/USA-Pages/WH/eo.html">Executive Orders</a></li>
+                          <li class="subMenu"><a href="Pages/USA-Pages/WH/twitter.html">Trump's Twitter</a></li>
+                          <li class="subMenu"><a href="Pages/USA-Pages/Hill/senate.html">Senate</a></li>
+                          <li class="subMenu"><a href="Pages/USA-Pages/WH/bills.html">Current Legislation</a></li>
                     </ul>
                 </li>
               </ul>
@@ -142,27 +144,23 @@
         </ul>
       <!-- </div> -->
 
-        <!-- <footer class="footsie-container">
-            <div class="footer">
-              <span class="menu"><a href="Factual.html">Factual</a></span>
-              <span class="menu"><a href="Progressive.html">Progressive</a></span>
-            <span class="menu"><a href="Conservative.html">Conservative</a></span>
-          </div>
-        </footer> -->
 
 
-  <script type="text/javascript">
+<script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+<script src="orbital/orbitlist.js"></script>
+<script type="text/javascript" src="jQuery.js"></script>
+<script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-36251023-1']);
+_gaq.push(['_setDomainName', 'jqueryscript.net']);
+_gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
 
 </script>
   </body>

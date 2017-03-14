@@ -33,8 +33,13 @@ body {
   width: 100%;
   height: 100vh;
   background-color: #142f43;
-  /*background-image: url("http://www.temporarytattoos4u.co.uk/ekmps/shops/12march2004/images/holographic-black-glitter-2763-p.jpg");*/
   background-image: url('images/flag.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pages {
+  background-image: url('images/ukflag.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -55,7 +60,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.eu {
+.uk {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -65,7 +70,7 @@ body {
   height: 100vh;
   background-color: #142f43;
   /*background-image: url("http://www.temporarytattoos4u.co.uk/ekmps/shops/12march2004/images/holographic-black-glitter-2763-p.jpg");*/
-  background-image: url('images/euflag.jpg');
+  background-image: url('images/ukflag.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -144,6 +149,11 @@ nav {
   margin:auto;
 }
 
+.back1 {
+  width: 15%;
+  margin-top:4%;
+}
+
 .spinner {
   width: 100px;
   height: 100px;
@@ -201,13 +211,13 @@ nav {
   z-index: 999999;
 }
 
-.spinner-wrapper-eu {
+.spinner-wrapper-uk {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('images/euflag.jpg');
+  background-image: url('images/ukflag.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -409,6 +419,45 @@ select {
   background-size: contain;
 }
 
+/*EU IMAGES*/
+
+.orbit li.bbc-news{
+  background-color: #9c0a0d;
+  background-image: url("images/bbclogo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.orbit li.telegraph{
+  background-image: url("images/telegraph.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.orbit li.sky-news{
+background-color: #f7f6f9;
+  background-image: url("images/skylogo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.orbit li.business-insider-uk{
+  background-color: #1b607c;
+  background-image: url("images/biLogo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.orbit li.abc{
+  background-image: url("images/abclogo.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*END OF EU IMAGES*/
+
 .subMenu {
   display: flex;
   justify-content: center;
@@ -445,8 +494,8 @@ ul.submenu li {
   opacity:.2;
 }
 
- .subMenu .a {
-  font-size:78%;
+ .subMenu.a {
+  font-size:70%;
 }
 
 .footer-container {
@@ -526,6 +575,17 @@ ul.menu {
     background-color: grey;
 }
 
+.toHide {
+  display: none;
+}
+
+.apiText {
+  font-size: 1px;
+}
+
+
+
+
 /*MEDIA QUERIES*/
 
 @media (max-width: 768px) {
@@ -546,7 +606,7 @@ ul.menu {
     background-repeat: no-repeat;
   }
 
-  .eu {
+  .uk {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -556,7 +616,7 @@ ul.menu {
     height: 100vh;
     background-color: #142f43;
     /*background-image: url("http://www.temporarytattoos4u.co.uk/ekmps/shops/12march2004/images/holographic-black-glitter-2763-p.jpg");*/
-    background-image: url('images/euflag1.jpeg');
+    background-image: url('images/ukflag.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -594,13 +654,13 @@ ul.menu {
     background-repeat: no-repeat;
   }
 
-  .spinner-wrapper-eu {
+  .spinner-wrapper-uk {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('images/euflag1.jpeg');
+    background-image: url('images/ukflag.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

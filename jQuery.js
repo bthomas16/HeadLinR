@@ -1,33 +1,40 @@
 $(document).ready(function(){
-  $(window).load(function(){
 
     loaderTime = 2000
     delayTime=1000
 
     $('.progressive').click(function(){
-      $('.progressive').toggleClass('active')
-      $('.fox').fadeToggle('hidden')
-      $('.thehill').fadeToggle('hidden')
-      $('.wh').fadeToggle('hidden')
-    })
+        $('.progressive').toggleClass('active')
+        $('.fox').fadeToggle('hidden')
+        $('.thehill').fadeToggle('hidden')
+        $('.wh').fadeToggle('hidden')
+      })
 
-    $('.conservative').click(function(){
-      $('.conservative').toggleClass('active')
-      $('.cnn').fadeToggle('hidden')
-      $('.reuters').fadeToggle('hidden')
-      $('.nytimes').fadeToggle('hidden')
-      $('.ap').fadeToggle('hidden')
-    })
+      $('.conservative').click(function(){
+        $('.conservative').toggleClass('active')
+        $('.cnn').fadeToggle('hidden')
+        $('.reuters').fadeToggle('hidden')
+        $('.nytimes').fadeToggle('hidden')
+        $('.ap').fadeToggle('hidden')
+      })
 
-    $('.facts').click(function(){
-      $('.cnn').fadeToggle('hidden')
-      $('.reuters').fadeToggle('hidden')
-      $('.nytimes').fadeToggle('hidden')
-      $('.ap').fadeToggle('hidden')
-      $('.fox').fadeToggle('hidden')
-      $('.thehill').fadeToggle('hidden')
-      $('.wh').fadeToggle('hidden')
-    })
+      $('.facts').click(function(){
+        $('.cnn').fadeToggle('hidden')
+        $('.reuters').fadeToggle('hidden')
+        $('.nytimes').fadeToggle('hidden')
+        $('.ap').fadeToggle('hidden')
+        $('.fox').fadeToggle('hidden')
+        $('.thehill').fadeToggle('hidden')
+        $('.wh').fadeToggle('hidden')
+      })
+
+    // function delayOrbit(){
+    //   if (loaderTime === 0) {
+    //   $('.toHide').removeClass('toHide')
+    //   }
+    //       delayOrbit()
+    // }
+
 
     function hidePreLoader() {
     var preloader = $('.spinner-wrapper')
@@ -41,12 +48,11 @@ $(document).ready(function(){
     }
     hidePreLoaderMexico()
 
-    function hidePreLoaderEU() {
-      var preloader2 = $('.spinner-wrapper-eu')
+    function hidePreLoaderUK() {
+      var preloader2 = $('.spinner-wrapper-uk')
       preloader2.fadeOut(loaderTime)
     }
-     hidePreLoaderEU()
-
+     hidePreLoaderUK()
 
     function hidePreLoaderCanada() {
     var preloader3 = $('.spinner-wrapper-canada')
@@ -60,11 +66,12 @@ $(document).ready(function(){
     }
       hidePreLoaderChina()
 
-var monkey = $('.country-container')
-
     $('.back').click(function(){
     parent.history.back();
     return false;
        });
-    })
+    $('.back1').click(function(){
+    parent.history.back();
+    return false;
+       });
 })
