@@ -4,19 +4,38 @@ $(document).ready(function(){
     delayTime=1000
 
 
-var url = "https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=edd5090deb6b47eaa1aa6368b9779ebe"
-    $.get(url, (function(apData) {
-      console.log(apData.articles[0].title)
-      for (var i =0; i < apData.articles.length; i++){
-        var  cnnTitles = apData.articles[i].title
-        console.log(cnnTitles)
-        pushData()
-      }
-    }))
+// var url = "https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=edd5090deb6b47eaa1aa6368b9779ebe"
+//     $.get(url, (function(apData) {
+//       console.log(apData.articles[0].title)
+//       for (var i =0; i < apData.articles.length; i++){
+//         var  cnnTitles = apData.articles[i].title
+//         console.log(cnnTitles)
+//         pushData()
+//       }
+//     }))
+//
+//     function pushData(){
+//         $(".ap1").contents().append(cnnTitles)
+//     }
 
-    function pushData(){
-        $(".ap1").contents().append(cnnTitles)
-    }
+    var url = "https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=edd5090deb6b47eaa1aa6368b9779ebe"
+
+        $.get(url).then(function(apData) {
+          console.log(apData.articles[0].title)
+          for (var i =0; i < apData.articles.length; i++){
+            var  apTitles = apData.articles[i].title
+            var  apLinks = apData.articles[i].url
+              console.log(apTitles)
+              var rss = (apTitles + apLinks)
+
+          }
+              return rss
+        }).then(function(rss) {
+            $(".bbc2").html(rss)
+            console.log('bishicles')
+        })
+
+
 
 
     function hidePreLoader() {
@@ -31,11 +50,11 @@ var url = "https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=edd
     }
     hidePreLoaderMexico()
 
-    function hidePreLoaderEU() {
-      var preloader2 = $('.spinner-wrapper-eu')
+    function hidePreLoaderUK() {
+      var preloader2 = $('.spinner-wrapper-uk')
       preloader2.fadeOut(loaderTime)
     }
-     hidePreLoaderEU()
+     hidePreLoaderUK()
 
     function hidePreLoaderCanada() {
     var preloader3 = $('.spinner-wrapper-canada')

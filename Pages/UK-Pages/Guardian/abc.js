@@ -31,11 +31,11 @@ var url = "https://newsapi.org/v1/articles?source=abc-news-au&sortBy=top&apiKey=
     }
     hidePreLoaderMexico()
 
-    function hidePreLoaderEU() {
-      var preloader2 = $('.spinner-wrapper-eu')
+    function hidePreLoaderUK() {
+      var preloader2 = $('.spinner-wrapper-uk')
       preloader2.fadeOut(loaderTime)
     }
-     hidePreLoaderEU()
+     hidePreLoaderUK()
 
     function hidePreLoaderCanada() {
     var preloader3 = $('.spinner-wrapper-canada')

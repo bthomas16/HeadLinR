@@ -449,8 +449,9 @@ background-color: #f7f6f9;
   background-position: center;
   background-repeat: no-repeat;
 }
-.orbit li.abc{
-  background-image: url("images/abclogo.jpg");
+.orbit li.gd{
+  background-color: #00558b;
+  background-image: url("images/gdlogo.jpg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -549,6 +550,7 @@ ul.submenu li {
 ul.menu {
   display: flex;
   justify-content: space-around;
+    align-items: center;
     list-style-type: none;
     overflow: hidden;
     background-color: black;
