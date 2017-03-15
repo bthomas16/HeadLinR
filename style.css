@@ -112,7 +112,7 @@ nav {
 .nav-wrapper{
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   width:100vw;
   margin:auto;
 }
@@ -629,6 +629,15 @@ ul.menu {
       margin-top:2%;
       /*padding-bottom:2%;*/
     }
+    .orbit li {
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+        border: 3% solid #000;
+        background: #fff;
+        text-align: center;
+        border: 2px solid white;
+    }
 }
 
 @media (min-width:601px) and (max-width: 768px) {
@@ -751,9 +760,9 @@ ul.menu {
 
   .orbit li {
     margin:auto;
-      width: 90px;
-      height: 90px;
-      border-radius: 90px;
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
       border: 3% solid #000;
   	  background: #fff;
       text-align: center;
@@ -811,6 +820,21 @@ ul.menu {
   animation: sk-rotateplane 1.2s infinite ease-in-out;
 }
 
+}
+
+@media (width:1024px) and (height:1366px){
+  .orbit li {
+      width: 200px;
+      height: 200px;
+      border-radius: 200px;
+      border: 3% solid #000;
+      background: #fff;
+      text-align: center;
+      border: 2px solid white;
+  }
+  .browser-default{
+    width:auto;
+  }
 }
 
 
