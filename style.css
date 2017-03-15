@@ -390,7 +390,7 @@ select {
   background-size: contain;
   z-index: 1;
 }
-.orbit li.fox{
+.orbit li.wsj{
   background-image: url("images/wsjlogo.png");
   background-size: contain;
   background-position: center;
@@ -443,9 +443,9 @@ select {
   background-position: center;
   background-repeat: no-repeat;
 }
-.orbit li.sky-news{
-background-color: #f7f6f9;
-  background-image: url("images/skylogo.png");
+.orbit li.mirror{
+background-color: #bd1417;
+  background-image: url("images/mirrorlogo.jpg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -647,6 +647,11 @@ ul.submenu li {
   justify-content: center;
   margin-top:auto;
 }
+
+.subMenu.a {
+  font-size:72%
+}
+
 
 ul.menu {
   display: flex;

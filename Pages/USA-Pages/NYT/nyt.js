@@ -3,20 +3,21 @@ $(document).ready(function(){
     loaderTime = 2000
     delayTime=1000
 
+    var url = "https://newsapi.org/v1/articles?source=die-zeit&sortBy=latest&apiKey=edd5090deb6b47eaa1aa6368b9779ebe"
+    var rssArray = []
 
-var url = "https://newsapi.org/v1/articles?source=the-new-york-times&sortBy=top&apiKey=edd5090deb6b47eaa1aa6368b9779ebe"
-    $.get(url, (function(cnnData) {
-      console.log(cnnData.articles[0].title)
-      for (var i =0; i < cnnData.articles.length; i++){
-        var  cnnTitles = cnnData.articles[i].title
-        console.log(cnnTitles)
-        pushData()
-      }
-    }))
-
-    function pushData(){
-        $(".r1").contents().append(cnnTitles)
-    }
+        $.get(url)
+        .then(function(newsweekData) {
+          console.log(newsweekData.articles[0].title)
+          for (var i =0; i < newsweekData.articles.length; i++){
+            var  newsweekTitles = newsweekData.articles[i].title
+            var  newsweekLinks = newsweekData.articles[i].url
+            var rss = newsweekTitles  + ' ' + newsweekLinks
+            console.log("This is RSS: "+rss)
+            var currentNum = i+1
+            $("#int"+currentNum).append(rss)
+             }
+           })
 
 
     function hidePreLoader() {
@@ -25,31 +26,29 @@ var url = "https://newsapi.org/v1/articles?source=the-new-york-times&sortBy=top&
     }
     hidePreLoader()
 
-    function hidePreLoaderMexico() {
-    var preloader1 = $('.spinner-wrapper-mexico')
-    preloader1.fadeOut(loaderTime)
-    }
-    hidePreLoaderMexico()
-
-    function hidePreLoaderEU() {
-      var preloader2 = $('.spinner-wrapper-eu')
+    function hidePreLoaderUK() {
+      var preloader2 = $('.spinner-wrapper-uk')
       preloader2.fadeOut(loaderTime)
     }
-     hidePreLoaderEU()
+     hidePreLoaderUK()
 
-    function hidePreLoaderCanada() {
-    var preloader3 = $('.spinner-wrapper-canada')
+    function hidePreLoaderInternational() {
+    var preloader3 = $('.spinner-wrapper-international')
     preloader3.fadeOut(loaderTime)
     }
-      hidePreLoaderCanada()
+      hidePreLoaderInternational()
 
-    function hidePreLoaderChina() {
-    var preloader4 = $('.spinner-wrapper-china')
+    function hidePreLoaderGermany() {
+    var preloader4 = $('.spinner-wrapper-germany')
     preloader4.fadeOut(loaderTime)
     }
-      hidePreLoaderChina()
+      hidePreLoaderGermany()
 
     $('.back').click(function(){
+    parent.history.back();
+    return false;
+       });
+    $('.back1').click(function(){
     parent.history.back();
     return false;
        });

@@ -7,7 +7,7 @@ $(document).ready(function(){
     var rssArray = []
 
         $.get(url)
-        .then(function(bbData) {
+        .then(function(bbcData) {
           console.log(bbcData.articles[0].title)
           for (var i =0; i < bbcData.articles.length; i++){
             var  bbcTitles = bbcData.articles[i].title
