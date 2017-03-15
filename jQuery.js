@@ -1,7 +1,9 @@
 $(document).ready(function(){
 
-    loaderTime = 2000
+    loaderTime = 1200
     delayTime=1000
+
+$(window).resize(function(){location.reload();});
 
     $('.progressive').click(function(){
         $('.progressive').toggleClass('active')
@@ -54,11 +56,11 @@ $(document).ready(function(){
     }
      hidePreLoaderUK()
 
-    function hidePreLoaderCanada() {
-    var preloader3 = $('.spinner-wrapper-canada')
+    function hidePreLoaderInternational() {
+    var preloader3 = $('.spinner-wrapper-international')
     preloader3.fadeOut(loaderTime)
     }
-      hidePreLoaderCanada()
+      hidePreLoaderInternational()
 
     function hidePreLoaderGermany() {
     var preloader4 = $('.spinner-wrapper-germany')

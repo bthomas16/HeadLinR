@@ -70,7 +70,7 @@ body {
   background-repeat: no-repeat;
 }
 
-/*.canada {
+.international {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -79,11 +79,11 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #142f43;
-  background-image: url('images/canadaflag.jpg');
+  background-image: url('images/worldpic2.jpeg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}*/
+}
 
 .germany {
   margin: auto;
@@ -94,7 +94,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #142f43;
-  background-image: url('images/germanyflag.jpeg');
+  background-image: url('images/germanyflag.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -125,18 +125,18 @@ nav {
   background-repeat: no-repeat;
   box-shadow: grey 0 5px 5px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .logo {
   width:10em;
-  margin:auto;
+  margin-top:4%;
 
 }
 
 .logo1 {
   width: 10em;
-  margin: auto;
+  margin-top: 1%;
 }
 
 .back {
@@ -232,13 +232,13 @@ nav {
   z-index: 999999;
 }
 
-.spinner-wrapper-canada {
+.spinner-wrapper-international {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('images/canadaflag.jpg');
+  background-image: url('images/worldpic2.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -251,7 +251,7 @@ nav {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('images/germanyflag.jpeg');
+  background-image: url('images/germanyflag.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -391,9 +391,10 @@ select {
   z-index: 1;
 }
 .orbit li.fox{
-  background-image: url("images/foxlogo.jpg");
-  background-size: cover;
+  background-image: url("images/wsjlogo.png");
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .orbit li.reuters{
   background-color: black;
@@ -464,6 +465,80 @@ background-color: #f7f6f9;
   background-repeat: no-repeat;
 }
 
+/*germany images*/
+.orbit li.gnews1{
+  background-color: #9c0a0d;
+  background-image: url("images/zeitlogo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.orbit li.gnews2{
+  background-color: #de2217;
+  background-image: url("images/bildlogo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.orbit li.gnews3{
+  background-color: black;
+  background-image: url("images/spiegellogo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.orbit li.gnews4{
+  background-color: #1b607c;
+  background-image: url("images/wwlogo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.orbit li.gnews5{
+  background-color: #00558b;
+  background-image: url("images/taglogo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*international images*/
+
+.orbit li.int1{
+  /*background-color: #9c0a0d;*/
+  background-image: url("images/newsweeklogo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid black;
+  z-index: 1;
+}
+.orbit li.int2{
+  /*background-color: #de2217;*/
+  background-image: url("images/indiatimeslogo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+    border: 2px solid black;
+}
+.orbit li.int3{
+  /*background-color: black;*/
+  background-image: url("images/focuslogo.jpeg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+    border: 2px solid black;
+}
+.orbit li.int4{
+  /*background-color: #1b607c;*/
+  background-image: url("images/hindulogo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid black;
+}
+
 /*END OF EU IMAGES*/
 
 .subMenu {
@@ -500,10 +575,6 @@ opacity:0.2;
 
 ul.submenu li {
   opacity:.2;
-}
-
- .subMenu.a {
-  font-size:78%;
 }
 
 .footer-container {
@@ -638,6 +709,9 @@ ul.menu {
         text-align: center;
         border: 2px solid white;
     }
+    .news{
+      font-size:1.2em;
+    }
 }
 
 @media (min-width:601px) and (max-width: 768px) {
@@ -674,7 +748,7 @@ ul.menu {
     background-repeat: no-repeat;
   }
 
-  .canada {
+  .international {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -684,7 +758,7 @@ ul.menu {
     height: 100vh;
     background-color: #142f43;
     /*background-image: url("http://www.temporarytattoos4u.co.uk/ekmps/shops/12march2004/images/holographic-black-glitter-2763-p.jpg");*/
-    background-image: url('images/canadaflag1.jpeg');
+    background-image: url('images/worldpic2.jpeg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -700,7 +774,7 @@ ul.menu {
     height: 100vh;
     background-color: #142f43;
     /*background-image: url("http://www.temporarytattoos4u.co.uk/ekmps/shops/12march2004/images/holographic-black-glitter-2763-p.jpg");*/
-    background-image: url('images/germanyflag.jpeg');
+    background-image: url('images/germanyflag.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -719,13 +793,13 @@ ul.menu {
     z-index: 999999;
   }
 
-  .spinner-wrapper-canada {
+  .spinner-wrapper-international {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('images/canadaflag1.jpeg');
+    background-image: url('images/worldpic2.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -738,7 +812,7 @@ ul.menu {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('images/germanyflag.jpeg');
+    background-image: url('images/germanyflag.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -759,7 +833,6 @@ ul.menu {
   }
 
   .orbit li {
-    margin:auto;
       width: 100px;
       height: 100px;
       border-radius: 100px;
@@ -798,7 +871,7 @@ ul.menu {
   }
 
   .spinner-uk {
-    margin:top:788vh;
+    /*margin:top:78vh;*/
   }
 
 .text {
@@ -819,6 +892,9 @@ ul.menu {
   -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
   animation: sk-rotateplane 1.2s infinite ease-in-out;
 }
+.logo {
+  margin-top:10%;
+}
 
 }
 
@@ -832,8 +908,16 @@ ul.menu {
       text-align: center;
       border: 2px solid white;
   }
+
   .browser-default{
     width:auto;
+  }
+
+  .nav-wrapper{
+  margin: 1%;
+}
+  .logo {
+    margin-top:5%;
   }
 }
 

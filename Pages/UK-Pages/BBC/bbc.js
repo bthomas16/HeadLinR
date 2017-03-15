@@ -3,26 +3,11 @@ $(document).ready(function(){
     loaderTime = 2000
     delayTime=1000
 
-
-// var url = "https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=edd5090deb6b47eaa1aa6368b9779ebe"
-//     $.get(url, (function(apData) {
-//       console.log(apData.articles[0].title)
-//       for (var i =0; i < apData.articles.length; i++){
-//         var  cnnTitles = apData.articles[i].title
-//         console.log(cnnTitles)
-//         pushData()
-//       }
-//     }))
-//
-//     function pushData(){
-//         $(".ap1").contents().append(cnnTitles)
-//     }
-
     var url = "https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=edd5090deb6b47eaa1aa6368b9779ebe"
     var rssArray = []
 
         $.get(url)
-        .then(function(bbcData) {
+        .then(function(bbData) {
           console.log(bbcData.articles[0].title)
           for (var i =0; i < bbcData.articles.length; i++){
             var  bbcTitles = bbcData.articles[i].title
@@ -34,20 +19,11 @@ $(document).ready(function(){
              }
            })
 
-
-
-
     function hidePreLoader() {
     var preloader = $('.spinner-wrapper')
     preloader.fadeOut(loaderTime)
     }
     hidePreLoader()
-
-    function hidePreLoaderMexico() {
-    var preloader1 = $('.spinner-wrapper-mexico')
-    preloader1.fadeOut(loaderTime)
-    }
-    hidePreLoaderMexico()
 
     function hidePreLoaderUK() {
       var preloader2 = $('.spinner-wrapper-uk')
@@ -55,17 +31,17 @@ $(document).ready(function(){
     }
      hidePreLoaderUK()
 
-    function hidePreLoaderCanada() {
-    var preloader3 = $('.spinner-wrapper-canada')
+    function hidePreLoaderInternational() {
+    var preloader3 = $('.spinner-wrapper-international')
     preloader3.fadeOut(loaderTime)
     }
-      hidePreLoaderCanada()
+      hidePreLoaderInternational()
 
-    function hidePreLoaderChina() {
-    var preloader4 = $('.spinner-wrapper-china')
+    function hidePreLoaderGermany() {
+    var preloader4 = $('.spinner-wrapper-germany')
     preloader4.fadeOut(loaderTime)
     }
-      hidePreLoaderChina()
+      hidePreLoaderGermany()
 
     $('.back').click(function(){
     parent.history.back();
