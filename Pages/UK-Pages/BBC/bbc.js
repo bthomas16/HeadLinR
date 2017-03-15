@@ -19,23 +19,21 @@ $(document).ready(function(){
 //     }
 
     var url = "https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=edd5090deb6b47eaa1aa6368b9779ebe"
-  var rssArray = []
+    var rssArray = []
 
-        $.get(url).then(function(apData) {
+        $.get(url)
+        .then(function(apData) {
           console.log(apData.articles[0].title)
           for (var i =0; i < apData.articles.length; i++){
-
             var  apTitles = apData.articles[i].title
             var  apLinks = apData.articles[i].url
-              console.log(apTitles)
-              $('.apTitles').addClass('titles')
-              var rss = apTitles + apLinks
-              rssArray.push(rss)
-          }
-        }).then(function(rss) {
-            $(".bbc2").contents().append(rssArray)
-            console.log('bishicles')
-        })
+            var rss = apTitles  + ' ' + apLinks
+            console.log("This is RSS: "+rss)
+            var currentNum = i+1
+            $("#bbc"+currentNum).append(rss)
+             }
+           })
+
 
         // var url = "https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=edd5090deb6b47eaa1aa6368b9779ebe"
         // var counter = 6
