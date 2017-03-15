@@ -5,19 +5,26 @@ $(document).ready(function(){
 
 
 var url = "https://newsapi.org/v1/articles?source=cnn&sortBy=top&apiKey=edd5090deb6b47eaa1aa6368b9779ebe"
-    $.get(url, (function(cnnData) {
+
+    $.get(url)
+    .then(function(cnnData) {
       console.log(cnnData.articles[0].title)
       for (var i =0; i < cnnData.articles.length; i++){
         var  cnnTitles = cnnData.articles[i].title
-        console.log(cnnTitles)
-        pushData()
-      }
-    }))
+        var  cnnLinks = cnnData.articles[i].url.replace('index.html', '')
+        // $(cnnLinks).attr('href', cnnLinks)
+        // $(cnnLinks)attr('tish')
+        var rss = cnnTitles  + ' ' + cnnLinks
+        console.log("This is RSS: "+rss)
+        var currentNum = i+1
+        $("#cnn"+currentNum).append(rss)
+        // $()#cnn.attr('href', cnnLinks)
+         }
+       })
 
-    function pushData(){
-        $(".c1").contents().append(cnnTitles)
-    }
-
+      //  $('.tish').each(function(){
+      //    this.href += '?a=text'
+      //  })
 
     function hidePreLoader() {
     var preloader = $('.spinner-wrapper')

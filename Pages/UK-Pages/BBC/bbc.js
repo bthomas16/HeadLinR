@@ -22,36 +22,17 @@ $(document).ready(function(){
     var rssArray = []
 
         $.get(url)
-        .then(function(apData) {
-          console.log(apData.articles[0].title)
-          for (var i =0; i < apData.articles.length; i++){
-            var  apTitles = apData.articles[i].title
-            var  apLinks = apData.articles[i].url
-            var rss = apTitles  + ' ' + apLinks
+        .then(function(bbcData) {
+          console.log(bbcData.articles[0].title)
+          for (var i =0; i < bbcData.articles.length; i++){
+            var  bbcTitles = bbcData.articles[i].title
+            var  bbcLinks = bbcData.articles[i].url
+            var rss = bbcTitles  + ' ' + bbcLinks
             console.log("This is RSS: "+rss)
             var currentNum = i+1
             $("#bbc"+currentNum).append(rss)
              }
            })
-
-
-        // var url = "https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=edd5090deb6b47eaa1aa6368b9779ebe"
-        // var counter = 6
-        //     $.get(url).then(function(apData) {
-        //       console.log(apData.articles[0].title)
-        //       for (var i =0; i < counter; i++){
-        //         var rssArray = []
-        //         var  apTitles = apData.articles[i].titl
-        //         e
-        //         var  apLinks = apData.articles[i].url
-        //           console.log(apTitles)
-        //         var rss = apTitles + apLinks
-        //           ('rss').push(rssArray)
-        //       }
-        //     }).then(function(rss) {
-        //         $(".bbc2").html(rss)
-        //         console.log('bishicles')
-        //     })
 
 
 

@@ -60,18 +60,18 @@ $(document).ready(function(){
     }
       hidePreLoaderCanada()
 
-    function hidePreLoaderChina() {
-    var preloader4 = $('.spinner-wrapper-china')
+    function hidePreLoaderGermany() {
+    var preloader4 = $('.spinner-wrapper-germany')
     preloader4.fadeOut(loaderTime)
     }
-      hidePreLoaderChina()
+      hidePreLoaderGermany()
 
-    $('.back').click(function(){
-    parent.history.back();
-    return false;
-       });
+      $('.back').click(function(){
+      history.go(-1)
+      return true;
+         });
     $('.back1').click(function(){
-    parent.history.back();
-    return false;
-       });
+      history.go(-1)
+      return true;
+         });
 })

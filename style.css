@@ -36,15 +36,10 @@ body {
   background-image: url('images/flag.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom:auto;
 }
 
-.pages {
-  background-image: url('images/ukflag.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.mexico {
+/*.mexico {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -53,12 +48,11 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #142f43;
-  /*background-image: url("http://www.temporarytattoos4u.co.uk/ekmps/shops/12march2004/images/holographic-black-glitter-2763-p.jpg");*/
   background-image: url('images/mexicoflag1.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
+}*/
 
 .uk {
   margin: auto;
@@ -76,7 +70,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.canada {
+/*.canada {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -85,14 +79,13 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #142f43;
-  /*background-image: url("http://www.temporarytattoos4u.co.uk/ekmps/shops/12march2004/images/holographic-black-glitter-2763-p.jpg");*/
   background-image: url('images/canadaflag.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
+}*/
 
-.china {
+.germany {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -101,8 +94,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #142f43;
-  /*background-image: url("http://www.temporarytattoos4u.co.uk/ekmps/shops/12march2004/images/holographic-black-glitter-2763-p.jpg");*/
-  background-image: url('images/chinaflag.jpg');
+  background-image: url('images/germanyflag.jpeg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -120,7 +112,7 @@ nav {
 .nav-wrapper{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width:100vw;
   margin:auto;
 }
@@ -132,16 +124,19 @@ nav {
   background-position: right;
   background-repeat: no-repeat;
   box-shadow: grey 0 5px 5px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .logo {
   width:10em;
-  margin-top:10%;
+  margin:auto;
+
 }
 
 .logo1 {
-  width:10em;
-  margin-top:auto;
+  width: 10em;
+  margin: auto;
 }
 
 .back {
@@ -151,7 +146,7 @@ nav {
 
 .back1 {
   width: 15%;
-  margin-top:4%;
+  margin:auto;
 }
 
 .spinner {
@@ -161,6 +156,19 @@ nav {
   background-size: contain;
   margin: 100px auto;
   margin-top:60vh;
+  border:1px solid white;
+  border-radius: 50%;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+.spinner-uk {
+  width: 100px;
+  height: 100px;
+  background-image: url('images/logo.png');
+  background-size: contain;
+  margin: 100px auto;
+  margin-top:64vh;
   border:1px solid white;
   border-radius: 50%;
   -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
@@ -237,13 +245,13 @@ nav {
   z-index: 999999;
 }
 
-.spinner-wrapper-china {
+.spinner-wrapper-germany {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('images/chinaflag.jpg');
+  background-image: url('images/germanyflag.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -294,7 +302,6 @@ header .newsTitle {
 header.pages-header {
   font-size:1em;
   margin: auto;
-  margin-top:0;
   /*background: white;*/
   width: 100%;
 }
@@ -496,7 +503,7 @@ ul.submenu li {
 }
 
  .subMenu.a {
-  font-size:70%;
+  font-size:78%;
 }
 
 .footer-container {
@@ -523,23 +530,46 @@ ul.submenu li {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 2;
+  margin-top: auto;
   width: 100%;
   height:justify;
   border-radius: 5px;
+  overflow: scroll;
 }
 
-.blog.munch {
-  width:100%;
-  height:justify;
-  margin:1%;
+.blog {
+  width:100vw;
+  height:auto;
+  margin:2%;
   background-color: lightgrey;
   opacity: .7;
   text-align: center;
   border: 1px solid white;
   border-radius: 5px;
   box-shadow: 5px 5px;
+  padding:3%;
 }
+
+.munch div{
+  width:auto;
+  font-size: .9em;
+  font-weight: bold;
+  background-color: white;
+  opacity: 1;
+  color: black;
+  margin:1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border:2px solid black;
+  border-radius: 5px;
+  padding:2%;
+  overflow: hidden;
+}
+
+/*.tish {
+  color: red;
+  font-size: 4em;
+}*/
 
 .pages-footer {
   display: flex;
@@ -581,18 +611,27 @@ ul.menu {
   display: none;
 }
 
-.bbc2 {
-  margin: 2%;
-  font-size: 1em;
-  color: white;
+.scroll {
+
 }
 
-
-
+.menu-uk {
+  display: none;
+}
 
 /*MEDIA QUERIES*/
+@media (min-width:1px) and (max-width:600px) {
+    .nav-wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width:100vw;
+      margin-top:2%;
+      /*padding-bottom:2%;*/
+    }
+}
 
-@media (max-width: 768px) {
+@media (min-width:601px) and (max-width: 768px) {
 
   .mexico {
     margin: auto;
@@ -642,7 +681,7 @@ ul.menu {
     background-repeat: no-repeat;
   }
 
-  .china {
+  .germany {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -652,7 +691,7 @@ ul.menu {
     height: 100vh;
     background-color: #142f43;
     /*background-image: url("http://www.temporarytattoos4u.co.uk/ekmps/shops/12march2004/images/holographic-black-glitter-2763-p.jpg");*/
-    background-image: url('images/chinaflag1.jpeg');
+    background-image: url('images/germanyflag.jpeg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -684,17 +723,26 @@ ul.menu {
     z-index: 999999;
   }
 
-  .spinner-wrapper-china {
+  .spinner-wrapper-germany {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('images/chinaflag1.jpeg');
+    background-image: url('images/germanyflag.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 999999;
+  }
+
+  .nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100vw;
+    margin-top:2%;
+    /*padding-bottom:2%;*/
   }
 
   .news{
@@ -716,6 +764,11 @@ ul.menu {
   .container {
     .height: 45vh;
   }
+
+  .logo {
+    width:10em;
+    margin-top:auto;
+  }
 }
 
 @media (min-width: 769px) {
@@ -733,6 +786,10 @@ ul.menu {
       width:50vw;
       border: 2px solid black;
       margin: 1%;
+  }
+
+  .spinner-uk {
+    margin:top:788vh;
   }
 
 .text {

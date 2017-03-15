@@ -49,12 +49,12 @@ var url = "https://newsapi.org/v1/articles?source=associated-press&sortBy=top&ap
     }
       hidePreLoaderChina()
 
-    $('.back').click(function(){
-    parent.history.back();
-    return false;
-       });
-    $('.back1').click(function(){
-    parent.history.back();
-    return false;
-       });
+      $('.back').click(function(){
+      history.go(-1)
+      return true;
+         });
+      $('.back1').click(function(){
+        history.go(-1)
+        return true;
+           });
 })
