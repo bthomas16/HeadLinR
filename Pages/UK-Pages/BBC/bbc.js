@@ -8,7 +8,7 @@ $(document).ready(function(){
 
         $.get(url)
         .then(function(varData) {
-          console.log(varData.articles[0].title)
+          console.log(varData.articles)
           for (var i =0; i < varData.articles.length; i++){
             var  varTitles = "<h5> " +varData.articles[i].title+"</h5>"
             var  varLinks = "<a href=' " + varData.articles[i].url+"'> Full Story Here </a>"

@@ -18,6 +18,7 @@ $(window).resize(function(){location.reload();});
         $('.reuters').fadeToggle('hidden')
         $('.nytimes').fadeToggle('hidden')
         $('.ap').fadeToggle('hidden')
+        $('.wsj').fadeToggle('hidden')
       })
 
       $('.facts').click(function(){
@@ -25,8 +26,7 @@ $(window).resize(function(){location.reload();});
         $('.reuters').fadeToggle('hidden')
         $('.nytimes').fadeToggle('hidden')
         $('.ap').fadeToggle('hidden')
-        $('.fox').fadeToggle('hidden')
-        $('.thehill').fadeToggle('hidden')
+        $('.wsj').fadeToggle('hidden')
         $('.wh').fadeToggle('hidden')
       })
 
