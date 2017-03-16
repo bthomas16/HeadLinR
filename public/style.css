@@ -8,11 +8,6 @@ select {
   font-family: Days One;
 }
 
-.hidden {
-  visibility: hidden;
-  display: none;
-}
-
 /* Website-Container */
 body {
   margin: auto;
@@ -910,6 +905,22 @@ ul.menu {
 }
 .logo {
   margin-top:10%;
+}
+
+.intenational {
+    background-repeat: repeat;
+}
+
+.uk {
+    background-repeat: repeat;
+}
+
+.pages {
+    background-repeat: repeat;
+}
+
+.germany {
+    background-repeat: repeat;
 }
 
 }
