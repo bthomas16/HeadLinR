@@ -393,10 +393,10 @@ select {
   background-position: center;
   background-repeat: no-repeat;
 }
-.orbit li.wh{
+/*.orbit li.wh{
   background-image: url("images/potuslogo.jpeg");
   background-size: contain;
-}
+}*/
 
 /*EU IMAGES*/
 
@@ -875,7 +875,7 @@ ul.menu {
 
   .browser-default {
       overflow: hidden;
-      width:100vw;
+      width:65vw;
       border: 2px solid black;
       margin: 1%;
       height: auto;

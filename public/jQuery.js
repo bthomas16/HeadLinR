@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   $('.container').css('visibility', 'visible')
-
+  
     loaderTime = 1200
     delayTime=1000
 
