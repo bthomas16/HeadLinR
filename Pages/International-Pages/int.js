@@ -3,64 +3,68 @@ $(document).ready(function(){
     loaderTime = 2000
     delayTime=1000
 
-    var url = "https://newsapi.org/v1/articles?source=die-zeit&sortBy=latest&apiKey=edd5090deb6b47eaa1aa6368b9779ebe"
+    var url = "https://newsapi.org/v1/articles?source=newsweek&sortBy=top&apiKey=edd5090deb6b47eaa1aa6368b9779ebe"
     var rssArray = []
 
         $.get(url)
-        .then(function(newsweekData) {
-          console.log(newsweekData.articles[0].title)
-          for (var i =0; i < newsweekData.articles.length; i++){
-            var  newsweekTitles = newsweekData.articles[i].title
-            var  newsweekLinks = newsweekData.articles[i].url
-            var rss = newsweekTitles  + ' ' + newsweekLinks
+        .then(function(varData) {
+          console.log(varData.articles[0].title)
+          for (var i =0; i < varData.articles.length; i++){
+            var  varTitles = "<h5> " +varData.articles[i].title+"</h5>"
+            var  varLinks = "<a href=' " + varData.articles[i].url+"'> Full Story Here </a>"
+            var  varDescription = "<h6> " + varData.articles[i].description+"</h6>"
+            var rss = varTitles  + ' ' + varLinks + ' ' + varDescription
             console.log("This is RSS: "+rss)
             var currentNum = i+1
             $("#int"+currentNum).append(rss)
              }
            })
 
-           var url1 = "https://newsapi.org/v1/articles?source=bild&sortBy=top&apiKey=edd5090deb6b47eaa1aa6368b9779ebe"
+           var url1 = "https://newsapi.org/v1/articles?source=the-times-of-india&sortBy=top&apiKey=edd5090deb6b47eaa1aa6368b9779ebe"
            var rssArray = []
 
                $.get(url1)
-               .then(function(indiaTimesData) {
-                 console.log(indiaTimesData.articles[0].title)
-                 for (var i =0; i < indiaTimesData.articles.length; i++){
-                   var  indiaTimesTitles = indiaTimesData.articles[i].title
-                   var  indiaTimesLinks = indiaTimesData.articles[i].url
-                   var rss = indiaTimesTitles  + ' ' + indiaTimesLinks
+               .then(function(varData) {
+                 console.log(varData.articles[0].title)
+                 for (var i =0; i < varData.articles.length; i++){
+                   var  varTitles = "<h5> " +varData.articles[i].title+"</h5>"
+                   var  varLinks = "<a href=' " + varData.articles[i].url+"'> Full Story Here </a>"
+                   var  varDescription = "<h6> " + varData.articles[i].description+"</h6>"
+                   var rss = varTitles  + ' ' + varLinks + ' ' + varDescription
                    console.log("This is RSS: "+rss)
                    var currentNum = i+1
                    $("#int1-"+currentNum).append(rss)
                     }
                   })
 
-                  var url2 = "https://newsapi.org/v1/articles?source=spiegel-online&sortBy=top&apiKey=edd5090deb6b47eaa1aa6368b9779ebe"
+                  var url2 = "https://newsapi.org/v1/articles?source=focus&sortBy=top&apiKey=edd5090deb6b47eaa1aa6368b9779ebe"
                   var rssArray = []
 
                       $.get(url2)
-                      .then(function(focusData) {
-                        console.log(focusData.articles[0].title)
-                        for (var i =0; i < focusData.articles.length; i++){
-                          var  focusTitles = focusData.articles[i].title
-                          var  focusLinks = focusData.articles[i].url
-                          var rss = focusTitles  + ' ' + focusLinks
+                      .then(function(varData) {
+                        console.log(varData.articles[0].title)
+                        for (var i =0; i < varData.articles.length; i++){
+                          var  varTitles = "<h5> " +varData.articles[i].title+"</h5>"
+                          var  varLinks = "<a href=' " + varData.articles[i].url+"'> Full Story Here </a>"
+                          var  varDescription = "<h6> " + varData.articles[i].description+"</h6>"
+                          var rss = varTitles  + ' ' + varLinks + ' ' + varDescription
                           console.log("This is RSS: "+rss)
                           var currentNum = i+1
                           $("#int2-"+currentNum).append(rss)
                            }
                          })
 
-                         var url3 = "https://newsapi.org/v1/articles?source=spiegel-online&sortBy=top&apiKey=edd5090deb6b47eaa1aa6368b9779ebe"
+                         var url3 = "https://newsapi.org/v1/articles?source=the-hindu&sortBy=top&apiKey=edd5090deb6b47eaa1aa6368b9779ebe"
                          var rssArray = []
 
                              $.get(url3)
-                             .then(function(hinduData) {
-                               console.log(hinduData.articles[0].title)
-                               for (var i =0; i < hinduData.articles.length; i++){
-                                 var  hinduTitles = hinduData.articles[i].title
-                                 var  hinduLinks = hinduData.articles[i].url
-                                 var rss = hinduTitles  + ' ' + hinduLinks
+                             .then(function(varData) {
+                               console.log(varData.articles[0].title)
+                               for (var i =0; i < varData.articles.length; i++){
+                                 var  varTitles = "<h5> " +varData.articles[i].title+"</h5>"
+                                 var  varLinks = "<a href=' " + varData.articles[i].url+"'> Full Story Here </a>"
+                                 var  varDescription = "<h6> " + varData.articles[i].description+"</h6>"
+                                 var rss = varTitles  + ' ' + varLinks + ' ' + varDescription
                                  console.log("This is RSS: "+rss)
                                  var currentNum = i+1
                                  $("#int3-"+currentNum).append(rss)

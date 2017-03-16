@@ -7,12 +7,13 @@ $(document).ready(function(){
     var rssArray = []
 
         $.get(url)
-        .then(function(bbcData) {
-          console.log(bbcData.articles[0].title)
-          for (var i =0; i < bbcData.articles.length; i++){
-            var  bbcTitles = bbcData.articles[i].title
-            var  bbcLinks = bbcData.articles[i].url
-            var rss = bbcTitles  + ' ' + bbcLinks
+        .then(function(varData) {
+          console.log(varData.articles[0].title)
+          for (var i =0; i < varData.articles.length; i++){
+            var  varTitles = "<h5> " +varData.articles[i].title+"</h5>"
+            var  varLinks = "<a href=' " + varData.articles[i].url+"'> Full Story Here </a>"
+            var  varDescription = "<h6> " + varData.articles[i].description+"</h6>"
+            var rss = varTitles  + ' ' + varLinks + ' ' + varDescription
             console.log("This is RSS: "+rss)
             var currentNum = i+1
             $("#bbc"+currentNum).append(rss)
