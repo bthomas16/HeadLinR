@@ -393,10 +393,10 @@ select {
   background-position: center;
   background-repeat: no-repeat;
 }
-/*.orbit li.wh{
+.orbit li.wh{
   background-image: url("images/potuslogo.jpeg");
   background-size: contain;
-}*/
+}
 
 /*EU IMAGES*/
 
@@ -665,11 +665,15 @@ ul.menu {
   align-items: flex-start;
   flex-wrap: wrap;
   width:100%;
-  height:justify;
+  height:80vh;
+  margin: auto;
 }
 
-.twitter-container iframe {
-  margin:2%;
+.twitter-container div {
+  margin: auto;
+  width: 50%;
+  height: 100%;
+  border:1px solid black;
 }
 
 .eo-container {

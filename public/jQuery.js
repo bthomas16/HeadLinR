@@ -1,9 +1,15 @@
 $(document).ready(function(){
 
   $('.container').css('visibility', 'visible')
-  
+
     loaderTime = 1200
-    delayTime=1000
+    fadeTime=200
+
+    function checkPosition() {
+      if ($(window).width() < 750) {
+        $('div').remove('.wh')
+      }
+    }
 
 $(window).resize(function(){location.reload();});
 
