@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-  // $(window).resize(function(){location.reload();});
-
     loaderTime = 2000
 
     function hidePreLoader() {

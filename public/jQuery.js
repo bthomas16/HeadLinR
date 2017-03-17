@@ -2,6 +2,8 @@ $(document).ready(function(){
 
   $('.container').css('visibility', 'visible')
 
+    $(window).resize(function(){location.reload();});
+
     loaderTime = 1200
     fadeTime=200
 
